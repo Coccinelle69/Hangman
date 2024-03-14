@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6rem;
+}
+
+#gameboard {
+  margin: 0 auto;
+  width: 80rem;
+  display: flex;
+  justify-content: center;
+}
+
+#guess-the-word {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 5rem;
+  width: 60rem;
+}
+#lines {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: last baseline;
+  height: 4rem;
+}
+
+#tries {
+  display: none;
+  background-color: rgb(247, 205, 208);
+  width: 50rem;
+  height: 15rem;
+  border-radius: 16px;
+}
+
+#x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(224, 55, 67);
+  color: white;
+  border: 6px solid white;
+  border-radius: 5px;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  position: relative;
+  /* bottom: 1.5rem; */
+  /* left: calc(50rem / 2 - 6px); */
+  transform: translate(-50%, -50%);
+  /* top: 50%; */
+  left: 50%;
+}
+
+#lettres {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.line {
+  height: 4rem;
+  font-size: 6rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.letter-in-a-word {
+  text-transform: uppercase;
+  /* height: 2rem; */
+}
+
+#backdrop {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#game-over {
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: white;
+  padding: 3rem;
+  padding-bottom: 9rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50rem;
+  height: 15rem;
+  text-align: center;
+  display: none;
+}
+
+#game-over h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+#game-over p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#game-over button {
+  background-color: #1c1c1c;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  margin-top: 3rem;
+}
+
+#revelation {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #1c1c1c;
+}
